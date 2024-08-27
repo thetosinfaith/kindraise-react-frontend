@@ -1,5 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.sighupBody {
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  
+  .sighupBox {
+    height: 100%;
+    background-color: aqua;
+    width: 40%;
+    padding: 30px;
+    display: flex;
+  }
+  
+  .sighupWrapper {
+    height: 100%;
+    background-color: rgb(189, 189, 189);
+    width: 60%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sighupInputArea {
+    height: 500px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    /* background-color: red; */
+  
+    input {
+      height: 50px;
+      width: 100%;
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid gray;
+      padding: 10px;
+    }
+  }
+  
+  .sighupBtn {
+    height: 50px;
+    width: 90px;
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+    align-self: flex-end;
+  }
+  
+  @media screen and (max-width: 767px) {
+    
+  }
