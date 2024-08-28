@@ -3,11 +3,12 @@ import './App.css'
 import LandingPage from './Pages/LandingPage'
 import Login from './auth/Login/Login'
 import Sighup from './auth/Signup/Signup'
-import User from './extra/User'
+import User from './Layout/User'
 import DashBoard from './Pages/DashBoard'
 import AdminRoute from './Admin/AdminRoute'
 import AdminDashboard from './Admin/AdminDashboard'
 import ForgetPassword from './auth/ForgetPassword/ForgetPassword'
+import Campaign from './Pages/Campaign'
 
 const router = createHashRouter([
   {
@@ -34,6 +35,10 @@ const router = createHashRouter([
         path: "/dashboard",
         element: <DashBoard/>
       },
+      {
+        path: '/dashboard/customize',
+        element: <Campaign/>
+      }
     ]
   },
   {
@@ -49,7 +54,7 @@ const router = createHashRouter([
         element: <AdminDashboard/>
       }
     ]
-  }
+  },
 ])
 
 function App() {
