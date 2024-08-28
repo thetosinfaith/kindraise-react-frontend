@@ -11,8 +11,8 @@ const Login = () => {
         <input type="text" className='loginInput' placeholder='Email'/>
         <input type="text" className='loginInput' placeholder='Password'/>
         <div className='inputText'>
-          <div>Forgot password</div>
-          <div onClick={()=>Nav('/sighup')}>Sigh up</div>
+          <div onClick={()=>Nav('/forgotpassword')}>Forgot password</div>
+          <div onClick={()=>Nav('/signup')}>Sigh up</div>
         </div>
         <button className='loginBtn' onClick={()=>Nav('/dashboard')}>burron</button>
       </div>

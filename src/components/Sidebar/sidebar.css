@@ -1,0 +1,48 @@
+.sideBarBody {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  padding: 5px;
+  color: white;
+}
+
+.sideBarWrapper {
+  /* width: ; */
+  padding-left: 30px;
+  margin-top: 60px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+}
+
+.logo {
+  height: 40px;
+  /* width: 80px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  border-right: 5px;
+  /* background-color: red; */
+  margin-bottom: 30px;
+  /* padding: 20px; */
+}
+
+.navSide {
+  height: 100%;
+  /* background-color: blue; */
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  li {
+    list-style-type: none;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+  }
+}
