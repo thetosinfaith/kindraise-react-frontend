@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landingpage-container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(298.67deg, #ECF3FF 12.88%, #B2F0D5 122.67%);
+
+}

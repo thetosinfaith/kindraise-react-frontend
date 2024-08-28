@@ -1,24 +1,29 @@
 import React from 'react'
-import './signup.css'
-import { useNavigate } from 'react-router-dom'
+import Logo from '../../assets/Logo.png'
+import './Signup.css'
 
-const Sighup = () => {
-  const Nav= useNavigate()
+const Signup = () => {
   return (
-    <div className='sighupBody'>
-      <div className="sighupBox">helk</div>
-      <div className="sighupWrapper">
-        <div className='sighupInputArea'>
-          <input type="text" placeholder='Fullname'/>
+    <section>
+      <div className='signup-container'>
+        <div className='signup-inner'>
+          <div className='signup-content'>
+            <div className='signup-image'>
+            <img src={Logo}/>
+            </div>
+          <h1>Empower Your Cause</h1>
+          <p>Amplify your mission with our easy-to-use tools.</p>
+          </div>
+        </div>
+        <div className='signup-inputs'>
+        <input type="text" placeholder='Fullname'/>
           <input type="text" placeholder='Email'/>
           <input type="text" placeholder='Password'/>
           <input type="text" placeholder='Email'/>
-          <div onClick={()=>Nav('/login')} style={{cursor: 'pointer'}}>login</div>
-          <button className='sighupBtn' onClick={()=>Nav('/login')}>click</button>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default Sighup
+export default Signup;
