@@ -14,14 +14,16 @@ const Signup = () => {
           <h1>Empower Your Cause</h1>
           <p>Amplify your mission with our easy-to-use tools.</p>
           </div>
-          
-          
         </div>
-        <div>m</div>
-
+        <div className='signup-inputs'>
+        <input type="text" placeholder='Fullname'/>
+          <input type="text" placeholder='Email'/>
+          <input type="text" placeholder='Password'/>
+          <input type="text" placeholder='Email'/>
+        </div>
       </div>
     </section>
   )
 }
 
-export default Signup
+export default Signup;
