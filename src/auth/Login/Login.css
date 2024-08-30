@@ -1,54 +1,145 @@
+* {
+  font-family: var(--main-font);
+}
+
 .loginBody {
   height: 100vh;
   width: 100%;
-  background-color: rgb(160, 211, 211);
+  /* background-color: aqua; */
+}
+
+.logoSec {
+  height: 59px;
+  height: 8vh;
+  background: #ffffff;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-.loginBox {
-  height: 450px;
-  width: 60%;
-  background-color: white;
-  border-radius: 10px;
+.formSec {
+  height: 92vh;
+  width: 100%;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 30px;
+  
+}
+
+.formBox {
+  /* height: 450px; */
+  height: max-content;
   padding: 30px;
-}
-
-.loginInput {
-  height: 50px;
-  width: 100%;
-  outline: none;
-  border-radius: 10px;
-  border: 1px solid gray;
-  padding: 10px;
-}
-
-.inputText {
-  height: 40px;
-  width: 100%;
-  /* background-color: aqua; */
+  margin: 20px;
+  width: max-content;
+  max-width: 428.56px;
+  background: #ffffff;
+  /* background-color: red; */
+  border-radius: 12.75px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  /* background-color: aqua; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
-  div {
+.formWrapper {
+  /* width: 374.99px; */
+  width: max-content;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.inputHolder {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.loginUpInput {
+  height: 40px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+  align-items: center;
+  /* background-color: #ffffff; */
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  /* outline: 1px solid #049255; */
+  outline: none;
+  font-size: 16px;
+
+  span {
     cursor: pointer;
+  }
+
+  > .pass {
+    height: 100%;
+    outline: none;
+    border: none;
+    width: 90%;
   }
 }
 
-.loginBtn {
-  width: 90px;
-  border-radius: 10px;
-  border: none;
-  background-color: green;
-  color: white;
+.inp {
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.loginText {
+  text-align: center;
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    font-size: 13px;
+  }
+}
+
+.forgetPassword {
+  align-self: flex-start;
   cursor: pointer;
-  align-self: flex-end;
-  height: 40px;
+  font-size: 16px;
+}
+
+.loginBtn {
+  width: 100%;
+  min-height: 44px;
+  background-color: #049255;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.sighUpCreateAcc {
+  height: 100%;
+  font-size: 15px;
+  display: flex;
+  align-items: flex-end;
+   span {
+    color: #049255;
+    cursor: pointer;
+   }
+}
+
+.rights {
+  font-size: 12px;
 }
