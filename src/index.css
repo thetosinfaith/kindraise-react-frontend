@@ -3,3 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --main-green: #049255;
+  --main-blue: #448AFF;
+  --black-out: #0B1215;
+  --white: #FFFFFF;
+  --main-font: arial, helvetica;
+  
+}
