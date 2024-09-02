@@ -7,6 +7,7 @@ import SideBar from '../components/Sidebar/SideBar'
 const LandingPage = () => {
   return (
     <div className='userLayoutBody'>
+      
       <div className='sidebar'><SideBar/></div>
       <div className='otherSide'>
         <div className='userLayoutHeader'><Header/></div>
