@@ -23,7 +23,7 @@ const Login = () => {
               Email Address
               <input type="text" className="loginUpInput inp" />
             </div>
-            <button className="loginBtn">
+            <button className="loginBtn" onClick={()=>Nav('/dashboard')}>
             Reset Password
             </button>
             <div className="returnMess">Return to sign in</div>

@@ -36,7 +36,7 @@ const Login = () => {
                 </span>
               </div>
             </div>
-            <div className="forgetPassword">forget password</div>
+            <div className="forgetPassword">Forget password</div>
             <button className="loginBtn" onClick={() => Nav("/passwordchange")}>
               Sign in
             </button>

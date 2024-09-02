@@ -114,7 +114,11 @@
 .forgetPassword {
   align-self: flex-start;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.forgetPassword:hover{
+  text-decoration: underline;
 }
 
 .loginBtn {

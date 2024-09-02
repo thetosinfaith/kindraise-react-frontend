@@ -21,7 +21,7 @@ const Header = () => {
           null
         }
         <div className='headerSighUp'>
-          <div className='headerBox' onClick={()=>Nav('/login')}>hello</div>
+          <div className='headerBox' onClick={()=>Nav('/')}>hello</div>
           <div className='headerBox'>hello</div>
         </div>
       </div>
