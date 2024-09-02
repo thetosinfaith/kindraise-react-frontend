@@ -20,11 +20,11 @@ const App = () => {
         <Route path="/resetpassword" element={<ResetPassword />} />
         <Route path="*" element={<div>page not found</div>} />
         <Route
-          path="/dashboard"
+          // path="/dashboard"
           element={<WebsiteLayout />}
           children={[
             <Route path="/dashboard" element={<DashBoard/>}/>,
-            <Route path="/dashboard/campaign" element={<Campaign/>}/>,
+            <Route path="/campaign" element={<Campaign/>}/>,
           ]}
         />
       </Routes>

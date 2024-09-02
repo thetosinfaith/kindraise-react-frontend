@@ -10,7 +10,7 @@ const LandingPage = () => {
       <div className='sidebar'><SideBar/></div>
       <div className='otherSide'>
         <div className='userLayoutHeader'><Header/></div>
-        <div><Outlet/></div>
+        <div className='holder'><Outlet/></div>
       </div>
     </div>
   )

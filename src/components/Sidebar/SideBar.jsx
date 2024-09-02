@@ -10,10 +10,10 @@ const SideBar = () => {
         <div className='logo'>LoGo</div>
         <div className='navSide'>
           <ul>
-            {/* <NavLink to={'/dashboard'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}>Dashboard</NavLink> */}
-            {/* <NavLink to={'/dashboard/campaign'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}>Dashboard</NavLink> */}
-            <li onClick={()=>Nav('/dashboard')}>Dashboard</li>
-            <li onClick={()=>Nav('/dashboard/campaign')}>Campaighn</li>
+            <NavLink to={'/dashboard'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}>Dashboard</NavLink>
+            <NavLink to={'/campaign'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}>Campaign</NavLink>
+            {/* <li onClick={()=>Nav('/dashboard')}>Dashboard</li> */}
+            {/* <li onClick={()=>Nav('/dashboard/campaign')}>Campaighn</li> */}
             <li>he</li>
             <li>he</li>
             <li>he</li>
