@@ -1,10 +1,10 @@
 import React from 'react'
-import './user.css'
-import { Outlet } from 'react-router-dom'
-import SideBar from '../components/Sidebar/SideBar'
 import Header from '../components/Header/Header'
+import { Outlet } from 'react-router-dom'
+import './WebsiteLayout.css'
+import SideBar from '../components/Sidebar/SideBar'
 
-const User = () => {
+const LandingPage = () => {
   return (
     <div className='userLayoutBody'>
       <div className='sidebar'><SideBar/></div>
@@ -16,4 +16,4 @@ const User = () => {
   )
 }
 
-export default User
+export default LandingPage

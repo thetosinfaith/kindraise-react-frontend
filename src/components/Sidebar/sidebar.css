@@ -6,6 +6,33 @@
   color: white;
 }
 
+.HeaderActive {
+  border-radius: 4px;
+  /* display: flex; */
+  /* height: 30px; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: white;
+  text-decoration: none;
+
+  height: 40px;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+
+  
+}
+
+.HeaderNotActive {
+  height: 40px;
+  border-radius: 4px;
+  width: 100%;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  
+}
+
 .sideBarWrapper {
   /* width: ; */
   padding-left: 30px;
