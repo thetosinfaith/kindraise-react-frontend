@@ -1,51 +1,44 @@
 .userLayoutBody {
   max-height: 100vh;
   min-height: 100vh;
-  /* background-color: aqua; */
   width: 100%;
   display: flex;
   overflow: hidden;
+
 }
 
 .sidebar {
-  /* background-color: red; */
-  min-width: 280px;
-
-  /* max-width: 300px; */
+  min-width: 240px;
 }
 
 .holder {
   min-height: 90vh;
-  background-color: aqua;
-  overflow-y: auto;
+  background-color: whitesmoke;
 }
 
 .otherSide {
-  /* background-color: cadetblue; */
   width: 100%;
 }
 
 .userLayoutHeader {
-  height: 80px;
-  /* background-color: greenyellow; */
+  height: 10vh;
+  background-color: white;
 }
 
 @media screen and (max-width: 800px) {
   .sidebar {
-    min-width: 90px;
+    min-width: 60px;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 428px) {
   .sidebar {
     display: none;
   }
+}
 
-  /* .headerSighUp {
-      display: none;
-    } */
-
-  /* .headerWrapper {
-      justify-content: space-between;
-    } */
+.menuOnphone {
+  height: 200px;
+  background-color: red;
+  width: 100%;
 }

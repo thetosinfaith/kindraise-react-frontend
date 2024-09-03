@@ -1,65 +1,76 @@
 .headerBody {
-    width: 100%;
-    background-color: rgb(207, 203, 203);
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .headerWrapper {
-    height: 100%;
-    /* background-color: red; */
-    width: 95%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .headerSighUp {
-    display: flex;
-    gap: 20px;
-    justify-self: end;
-  }
-  
-  .headerBox {
-    background-color: rgb(83, 83, 83);
-    height: 20px;
-    width: 60px;
-    cursor: pointer;
-    color: white;
-  
-  }
-  
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerWrapper {
+  height: 100%;
+  /* background-color: red; */
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerSighUp {
+  display: flex;
+  gap: 20px;
+  height: 30px;
+  /* background-color: red; */
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-self: end; */
+}
+
+.headerBox {
+  /* background-color: rgb(83, 83, 83); */
+  height: 20px;
+  color: black;
+  display: flex;
+  gap: 5px;
+  /* width: 60px; */
+  cursor: pointer;
+}
+
+.hello {
+  display: none;
+}
+
+.greenCircle {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(6, 194, 6);
+  border-radius: 50%;
+}
+
+.dropDown {
+  background-color: rgba(0, 0, 0, 0.355);
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  z-index: 9;
+}
+
+@media screen and (max-width: 425px) {
   .hello {
+    display: block;
+  }
+  .headerWrapper {
+    justify-content: space-between;
+  }
+  .headerSighUp {
     display: none;
   }
-  
+}
+
+@media screen and (min-width: 425px) {
   .dropDown {
-    background-color: rgba(0, 0, 0, 0.355);
-    height: 90vh;
-    width: 100%;
-    position: absolute;
-    right: 0;
-    top: 10vh;
-    z-index: 9;
+    display: none;
   }
-  
-  
-  @media screen and (max-width: 425px) {
-    .hello {
-      display: block;
-    }
-    .headerWrapper {
-      justify-content: space-between;
-    }
-    .headerSighUp {
-      display: none;
-    }
-  }
-  
-  @media screen and (min-width: 425px) {
-    .dropDown {
-      display: none;
-    }
-  }
+}

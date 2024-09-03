@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 import { useNavigate } from 'react-router-dom'
+import { BsQuestionCircle } from 'react-icons/bs'
 
 
 const Header = () => {
@@ -21,8 +22,10 @@ const Header = () => {
           null
         }
         <div className='headerSighUp'>
-          <div className='headerBox' onClick={()=>Nav('/')}>hello</div>
-          <div className='headerBox'>hello</div>
+          <div className='headerBox'><BsQuestionCircle size={15}/></div>
+          <div className='headerBox'>
+            <div className='greenCircle'></div>Jack samuel
+          </div>
         </div>
       </div>
     </div>

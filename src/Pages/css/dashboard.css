@@ -1,0 +1,153 @@
+.dashboardBody {
+  height: 90vh;
+  width: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.pageName {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.dashboardContent {
+  height: max-content;
+  /* background-color: turquoise; */
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.dashBoardUpperCard {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  /* background-color: green; */
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+
+.dashboardSmallCard {
+  height: 150px;
+  width: 100%;
+  min-width: 120px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+.dashBoardCardUpper {
+  height: 70%;
+  width: 100%;
+  /* background-color: aqua; */
+}
+
+.upperCardMainText {
+  /* color: rgb(10, 158, 10); */
+  font-size: 25px;
+}
+
+.one{
+  color: green;
+}
+
+.two {
+  color: rgb(210, 210, 35);
+}
+
+.three {
+  color: orange;
+}
+
+.four {
+  color: blue;
+}
+.cardSmallText {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(54, 54, 102);
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+
+.iconCircle {
+  height: 30px;
+  width: 30px;
+  /* color: gray; */
+  background-color: rgba(163, 163, 163, 0.33);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upperCardSubText {
+  color: gray;
+  font-size: 20px;
+  /* color: rgb(78, 78, 239); */
+}
+
+.dashBoardCardLower {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 640px) {
+  .dashBoardUpperCard {
+    flex-wrap: wrap;
+  }
+
+  .dashboardSmallCard {
+    min-width: 240px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+
+  .dashboardSmallCard {
+    width: 240px;
+  }
+  .dashBoardUpperCard {
+    overflow-x: scroll;
+    height: 200px;
+    flex-direction: column;
+  }
+}
+
+
+.dashBoardLowerCard {
+  height: max-content;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+
+.barChart {
+  height: 300px;
+  width: 100%;
+  /* min-width: 300px; */
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width:880px) {
+  .dashBoardLowerCard {
+    flex-direction: column;
+  }
+}
