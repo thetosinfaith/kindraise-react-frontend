@@ -8,6 +8,9 @@ import ResetPassword from "./auth/Resetpassword/ResetPassword";
 import CreateNewPassword from "./auth/CreateNewPassword/CreateNewPassword";
 import DashBoard from "./Pages/DashBoard";
 import Campaign from "./Pages/Campaign";
+import Track from "./Pages/Track";
+import Payout from "./Pages/Payout";
+import Account from "./Pages/Account";
 
 const App = () => {
   return (
@@ -25,6 +28,9 @@ const App = () => {
           children={[
             <Route path="/dashboard" element={<DashBoard/>}/>,
             <Route path="/campaign" element={<Campaign/>}/>,
+            <Route path="/track" element={<Track/>}/>,
+            <Route path="/payout" element={<Payout/>}/>,
+            <Route path="/account" element={<Account/>}/>,
           ]}
         />
       </Routes>

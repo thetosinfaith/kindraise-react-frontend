@@ -1,0 +1,177 @@
+.campaignBody {
+  height: 90vh;
+  width: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.campaignContent {
+  height: max-content;
+  /* background-color: turquoise; */
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.campaignSearchSide {
+  height: max-content;
+  align-items: center;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.SearchSide {
+  height: max-content;
+  width: max-content;
+  /* background-color: aqua; */
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.searchBox {
+  height: 30px;
+  padding-left: 10px;
+  width: 230px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+
+  input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding-left: 5px;
+  }
+}
+
+.filterIcon {
+  height: 30px;
+  width: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.campaignBtn {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(18, 154, 18);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.campaignTable {
+  height: 300px;
+  width: 100%;
+  border: 1px solid rgb(179, 178, 178);
+  /* background-color: aqua; */
+  border-radius: 10px;
+}
+
+.tableHeader {
+  height: 50px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.createdCampaigns {
+  height: 45px;
+  width: 100%;
+  /* background-color: aqua; */
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tableHeadName {
+  /* background-color: red; */
+  max-width: 300px;
+  width: 100%;
+  min-width: 150px;
+}
+
+.tableHeadDetails {
+  /* background-color: aqua; */
+  gap: 50px;
+
+  div {
+    width: 100px;
+    /* background-color: red; */
+  }
+}
+
+.tableHeadStatus {
+  gap: 40%;
+  /* background-color: red; */
+
+  div {
+    width: 50px;
+  }
+}
+
+.tb {
+  height: 100%;
+  /* width: max-content; */
+  /* background-color: greenyellow; */
+  display: flex;
+  align-items: center;
+}
+.CampaignName {
+  max-width: 300px;
+  width: 100%;
+  min-width: 150px;
+  /* background-color: green; */
+}
+
+.emp {
+  width: 22px;
+}
+
+
+.campaignMenuSec {
+
+  span {
+    display: flex;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+    
+    &:hover {
+      background-color: lightgray;
+      /* background-color: red; */
+    }
+  }
+}
+
+.tableDetails {
+
+}
+
+@media screen and (max-width: 428px) {
+  .tableHeadDetails {
+    display: none;
+  }
+}
