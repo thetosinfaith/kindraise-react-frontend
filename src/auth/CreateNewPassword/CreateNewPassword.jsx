@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./CreateNewPassword.css";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 import { useNavigate } from "react-router-dom";
 
 const CreateNewPassword = () => {

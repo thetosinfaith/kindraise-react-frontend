@@ -1,7 +1,7 @@
 import React from 'react'
 import './passwordchange.css'
 import { BiCheckShield } from 'react-icons/bi'
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 import { useNavigate } from 'react-router-dom';
 
 const PasswordChange = () => {
