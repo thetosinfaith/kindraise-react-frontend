@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./resetpassword.css";
 import { useNavigate } from "react-router-dom";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 
 const Login = () => {
   const Nav = useNavigate();

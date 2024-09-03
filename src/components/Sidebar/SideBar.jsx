@@ -4,7 +4,8 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { BiBook, BiHome, BiWallet } from 'react-icons/bi'
 import { BsMegaphone } from 'react-icons/bs'
 import { FiSettings } from 'react-icons/fi'
-import Logo from '../../assets/logo.png'
+import Icon from '../../assets/Icon.svg'
+import Logo from '../../assets/Logo.svg'
 
 const SideBar = () => {
   const Nav = useNavigate()
@@ -12,8 +13,10 @@ const SideBar = () => {
     <div className='sideBarBody'>
       <div className='sideBarWrapper'>
         <div className='logo'>
-          <img src={Logo} alt="" />
-          <div className='logoSmall'>logo</div>
+          <img src={Logo} alt="" className='full'/>
+          <div className='logoSmall'>
+            <img src={Icon} alt="" />
+          </div>
         </div>
         <div className='navSide'>
           <ul className='nav'>
