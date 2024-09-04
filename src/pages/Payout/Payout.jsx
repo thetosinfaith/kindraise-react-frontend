@@ -1,6 +1,6 @@
 import React from 'react'
-import './css/payout.css'
-import NigeriaMap from '../components/Map/NigeriaMap'
+import './Payout.css'
+import NigeriaMap from '../../components/Map/NigeriaMap'
 
 const Payout = () => {
   return (

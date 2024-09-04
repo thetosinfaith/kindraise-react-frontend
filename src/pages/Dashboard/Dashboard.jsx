@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/dashboard.css";
+import './Dashboard.css'
 import {
   Area,
   AreaChart,

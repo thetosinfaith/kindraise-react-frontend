@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './css/campaign.css'
+import './Campaign.css'
 import { BiFilter, BiSearch } from 'react-icons/bi'
 import { CgMenu } from 'react-icons/cg'
 

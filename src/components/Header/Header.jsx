@@ -1,35 +1,63 @@
-import React, { useState } from 'react'
-import './Header.css'
-import { useNavigate } from 'react-router-dom'
-import { BsQuestionCircle } from 'react-icons/bs'
-
+import React, { useState } from 'react';
+import './Header.css';
+import { useNavigate } from 'react-router-dom';
+import OfficialLogo from '../../assets/whiteLogo.png';
+import { GoChevronDown } from "react-icons/go";
 
 const Header = () => {
-  const [show, setShow] = useState(false)
+  const [dropdownOpen, setDropdownOpen] = useState(null);
+  const navigate = useNavigate();
 
-  const Nav = useNavigate()
+  const toggleDropdown = (menu) => {
+    setDropdownOpen(dropdownOpen === menu ? null : menu);
+  };
+
   return (
-    
-    <div className='headerBody'>
-      <div className="headerWrapper">
-        <div className='hello'>Logo</div>
-        <div className='hello' onClick={()=>setShow(!show)}>{show ? 'close' : 'menu'}</div>
-        {
-          show ? 
-          <div className='dropDown'>
-            <div onClick={()=>setShow(false)}> drop-down secction</div>
-          </div>:
-          null
-        }
-        <div className='headerSighUp'>
-          <div className='headerBox'><BsQuestionCircle size={15}/></div>
-          <div className='headerBox'>
-            <div className='greenCircle'></div>Jack samuel
-          </div>
-        </div>
+    <div className="header-container">
+    <header className="header">
+      <img src={OfficialLogo} alt="Logo" className="logo" onClick={() => navigate('/')} />
+      <nav className="nav">
+        <ul className="nav-list">
+          <li className="nav-item">
+            <button className="dropdown-toggle" onClick={() => toggleDropdown('product')}>
+              Product <GoChevronDown />
+            </button>
+            {dropdownOpen === 'product' && (
+              <ul className="dropdown-menu">
+                <li className="dropdown-item" onClick={() => navigate('/product1')}>Product 1</li>
+                <li className="dropdown-item" onClick={() => navigate('/product2')}>Product 2</li>
+              </ul>
+            )}
+          </li>
+          <li className="nav-item">
+            <button className="dropdown-toggle" onClick={() => toggleDropdown('pricing')}>
+              Pricing <GoChevronDown />
+            </button>
+            {dropdownOpen === 'pricing' && (
+              <ul className="dropdown-menu">
+                <li className="dropdown-item" onClick={() => navigate('/pricing')}>Pricing Plan 1</li>
+              </ul>
+            )}
+          </li>
+          <li className="nav-item">
+            <button className="dropdown-toggle" onClick={() => toggleDropdown('resources')}>
+              Resources <GoChevronDown />
+            </button>
+            {dropdownOpen === 'resources' && (
+              <ul className="dropdown-menu">
+                <li className="dropdown-item" onClick={() => navigate('/resources')}>Blog</li>
+              </ul>
+            )}
+          </li>
+        </ul>
+      </nav>
+      <div className="auth-buttons">
+        <button onClick={() => navigate('/login')} className="nav-button login-button">Login</button>
+        <button onClick={() => navigate('/signup')} className="nav-button signup-button">Signup</button>
       </div>
+    </header>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

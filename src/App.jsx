@@ -1,41 +1,43 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import WebsiteLayout from "./Layout/WebsiteLayout";
-// import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import HomepageLayout from "./layouts/HomepageLayout/HomepageLayout";
 import Signup from "./auth/Signup/Signup";
 import Login from "./auth/Login/Login";
 import PasswordChange from "./auth/PasswordChanged/PasswordChange";
-import ResetPassword from "./auth/Resetpassword/ResetPassword";
 import CreateNewPassword from "./auth/CreateNewPassword/CreateNewPassword";
-import DashBoard from "./Pages/DashBoard";
-import Campaign from "./Pages/Campaign";
-import Track from "./Pages/Track";
-import Payout from "./Pages/Payout";
-import Account from "./Pages/Account";
+import ResetPassword from "./auth/Resetpassword/ResetPassword";
+import DashBoard from "./pages/Dashboard/Dashboard";
+import Campaign from "./pages/Campaign/Campaign";
+import Track from "./pages/Track/Track";
+import Payout from "./pages/Payout/Payout";
+import Account from "./pages/Account/Account";
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Routes>
+        {/* Public Auth Routes */}
+        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/" element={<Login />} />
         <Route path="/passwordchange" element={<PasswordChange />} />
         <Route path="/createpassword" element={<CreateNewPassword />} />
         <Route path="/resetpassword" element={<ResetPassword />} />
-        <Route path="*" element={<div>page not found</div>} />
-        <Route
-          // path="/dashboard"
-          element={<WebsiteLayout />}
-          children={[
-            <Route path="/dashboard" element={<DashBoard/>}/>,
-            <Route path="/campaign" element={<Campaign/>}/>,
-            <Route path="/track" element={<Track/>}/>,
-            <Route path="/payout" element={<Payout/>}/>,
-            <Route path="/account" element={<Account/>}/>,
-          ]}
-        />
+
+        {/* Homepage */}
+        <Route path="/" element={<HomepageLayout />} />
+
+        {/* Dashboard and related routes */}
+        <Route path="/dashboard" element={<DashBoard />}>
+          <Route path="campaign" element={<Campaign />} />
+          <Route path="track" element={<Track />} />
+          <Route path="payout" element={<Payout />} />
+          <Route path="account" element={<Account />} />
+        </Route>
+
+        {/* Undefined paths */}
+        <Route path="*" element={<div>Page not found</div>} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
