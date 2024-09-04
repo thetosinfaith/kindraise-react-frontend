@@ -41,7 +41,7 @@ const Login = () => {
               Sign in
             </button>
             <div className="sighUpCreateAcc">
-              Dont have a kind raise account? <span onClick={()=>Nav(-1)}>Create one</span>
+            Don't have a KindRaise account? <span onClick={()=>Nav(-1)}> Create one</span>
             </div>
           </div>
         </div>

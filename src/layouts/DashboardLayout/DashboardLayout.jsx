@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header/Header";
+import Header from "../../components/Header/Header";
 import { Outlet } from "react-router-dom";
-import "./WebsiteLayout.css";
-import SideBar from "../components/Sidebar/SideBar";
+import "./DashboardLayout.css";
+import SideBar from "../../components/Sidebar/SideBar";
 
-const LandingPage = () => {
+const DashboardLayout = () => {
   return (
     <div className="userLayoutBody">
       <div className="sidebar">
@@ -22,4 +22,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default DashboardLayout;

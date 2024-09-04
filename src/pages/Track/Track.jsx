@@ -1,6 +1,6 @@
 import React from 'react'
-import './css/track.css'
-import ProgressBar from '../components/ProgressBar/ProgressBar'
+import './Track.css'
+import ProgressBar from '../../components/ProgressBar/ProgressBar'
 
 const Track = () => {
   return (
