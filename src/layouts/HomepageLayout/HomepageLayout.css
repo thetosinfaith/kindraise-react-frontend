@@ -5,8 +5,7 @@
 }
 
 .landingpage-container{
-    height: 100vh;
+    height: auto;
     width: 100%;
     background: linear-gradient(298.67deg, #ECF3FF 12.88%, #B2F0D5 122.67%);
-
 }
