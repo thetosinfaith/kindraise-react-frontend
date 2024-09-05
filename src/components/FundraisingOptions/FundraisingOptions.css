@@ -7,6 +7,7 @@
   }
   
   .fundraising-container {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +16,7 @@
   }
   
   .fundraising-content {
-    margin-bottom: 20px;
+    margin-top: 30px;
   }
   
   .fundraising-content h1 {
@@ -58,11 +59,12 @@
   }
   
   .top-left {
-    margin-top: 210px;
+    margin-top: 170px;
     top: -10px;
-    left: -100px;
-  }
-  
+    left: -10px;
+    transform: translateX(-100px);
+}
+
   .top-right {
     margin-top: 60px;
     top: -10px; 

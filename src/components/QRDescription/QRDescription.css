@@ -1,0 +1,105 @@
+.qr-description-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .qr-description-container {
+    height: 100vh;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .qr-description-img-content {
+    position: relative;
+    width: 50%;
+  }
+  
+  .qr-description-content {
+    width: 50%;
+    padding: 70px;
+    margin-bottom: 10%;
+  }
+  
+  .qr-description-content h1 {
+    font-family: Proxima Nova, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 78px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .qr-description-content p {
+    font-family: Proxima Nova, sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: left;
+  }
+  
+  .qr-main-image {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 20%;
+  }
+  
+  .qr-overlay-image {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .qr-image {
+    width: 250px;
+    height: auto;
+  }
+  
+  .top-right {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .print-icon {
+    width: 150px; 
+    height: auto; 
+    position: absolute;
+    bottom: 70px;
+    right: 50px; 
+    z-index: 2;
+  }
+  
+  .download-icon {
+    width: 150px; 
+    height: auto; 
+    position: absolute;
+    bottom: 210px;
+    right: -50px;
+    z-index: 1;
+  }
+  
+  .qr-arrow-icon {
+    width: 150px; 
+    height: 150px;
+    position: absolute;
+    bottom: -80px;
+    right: 10px; 
+    z-index: 3;
+  }
+  
+  @media (max-width: 768px) {
+    .qr-description-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .qr-description-img-content,
+    .qr-description-content {
+      width: 100%;
+    }
+  }
+  
