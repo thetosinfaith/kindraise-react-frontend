@@ -6,6 +6,7 @@ import { BsMegaphone } from 'react-icons/bs'
 import { FiSettings } from 'react-icons/fi'
 import Icon from '../../assets/Icon.svg'
 import Logo from '../../assets/Logo.svg'
+import { IoIosLogOut } from 'react-icons/io'
 
 const SideBar = () => {
   const Nav = useNavigate()
@@ -13,7 +14,9 @@ const SideBar = () => {
     <div className='sideBarBody'>
       <div className='sideBarWrapper'>
         <div className='logo'>
-          <img src={Logo} alt="" className='full'/>
+          <div className='imgFull'>
+           <img src={Logo} alt="" className='full'/>
+          </div>
           <div className='logoSmall'>
             <img src={Icon} alt="" />
           </div>
@@ -25,6 +28,7 @@ const SideBar = () => {
             <NavLink to={'/track'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}><BiBook size={15}/><span>Track</span></NavLink>
             <NavLink to={'/payout'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}><BiWallet size={15}/><span>Payout</span></NavLink>
             <NavLink to={'/account'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}><FiSettings size={15}/><span>Account</span></NavLink>
+            <NavLink to={'/account'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}><IoIosLogOut /><span>Account</span></NavLink>
             
           </ul>
         </div>

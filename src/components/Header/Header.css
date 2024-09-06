@@ -36,7 +36,11 @@
   cursor: pointer;
 }
 
-.hello {
+.iconSide {
+  display: none;
+}
+
+.menuSide {
   display: none;
 }
 
@@ -51,14 +55,41 @@
   background-color: rgba(0, 0, 0, 0.355);
   height: 90vh;
   width: 100%;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 10vh;
-  z-index: 9;
+  z-index: 9999;
 }
 
-@media screen and (max-width: 425px) {
-  .hello {
+input {
+  /* outline-color: #05BB6D; */
+  outline-width: 0.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .dropDown {
+  height: 90vh;
+  top: 10vh;
+  width: 100%;
+  background-color: red;
+  position: fixed;
+  
+} */
+
+@media screen and (max-width: 428px) {
+  .iconSide {
+    display: block;
+    height: 50px;
+    width: 100px;
+    /* background-color: red; */
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .menuSide {
     display: block;
   }
   .headerWrapper {
@@ -69,8 +100,9 @@
   }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 428px) {
   .dropDown {
     display: none;
   }
 }
+

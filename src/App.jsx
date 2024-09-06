@@ -11,6 +11,8 @@ import Campaign from "./Pages/Campaign";
 import Track from "./Pages/Track";
 import Payout from "./Pages/Payout";
 import Account from "./Pages/Account";
+import CreateCampaign from "./Pages/CreateCampaign";
+import FundraisingPage from "./Pages/FundraisingPage";
 
 const App = () => {
   return (
@@ -21,9 +23,10 @@ const App = () => {
         <Route path="/passwordchange" element={<PasswordChange />} />
         <Route path="/createpassword" element={<CreateNewPassword />} />
         <Route path="/resetpassword" element={<ResetPassword />} />
+        <Route path="/fundraising-page" element={<FundraisingPage />} />
         <Route path="*" element={<div>page not found</div>} />
         <Route
-          // path="/dashboard"
+          // path="/dashboard"  
           element={<WebsiteLayout />}
           children={[
             <Route path="/dashboard" element={<DashBoard/>}/>,
@@ -31,6 +34,7 @@ const App = () => {
             <Route path="/track" element={<Track/>}/>,
             <Route path="/payout" element={<Payout/>}/>,
             <Route path="/account" element={<Account/>}/>,
+            <Route path="/campaign/create.campaign" element={<CreateCampaign/>}/>,
           ]}
         />
       </Routes>

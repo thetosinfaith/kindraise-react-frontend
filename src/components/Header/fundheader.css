@@ -1,0 +1,93 @@
+.fundHeaderBody {
+  height: 140px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.fundHeaderWrapper {
+  background-color: white;
+  height: 50%;
+  width: 85%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+}
+
+.fundHeadLogo {
+  /* background-color: red; */
+  width: 150px;
+  /* height: 100px; */
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.fundHeadNav {
+  /* background-color: green; */
+
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+
+    li {
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: #049255;
+      }
+    }
+  }
+}
+
+.fundHeadBtnSide {
+  /* background-color: blue; */
+  display: flex;
+  gap: 20px;
+}
+
+.headLoginBtn {
+  height: 50px;
+  /* padding: 20px; */
+  width: 80px;
+  background-color: white;
+  border: 1px solid #049255;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #049255;
+    color: white;
+  }
+}
+
+.headSignUpBtn {
+  height: 50px;
+  /* padding: 20px; */
+  width: 100px;
+  border: none;
+  color: white;
+  background-color: #049255;
+  /* border: 1px solid #049255; */
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #049255;
+  }
+}
