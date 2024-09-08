@@ -1,0 +1,23 @@
+.npoSignUpBody {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.npoSignupInputBox {
+  height: max-content;
+  background-color: rgb(207, 207, 207);
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.npoQusBox {
+  /* height: 20px; */
+  width: 60%;
+  min-width: 360px;
+  background-color: aqua;
+}

@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { BsQuestionCircle } from "react-icons/bs";
 import Logo from "../../assets/Logo.svg";
 import Icon from "../../assets/Icon.svg";
+import Menu from "./Menu";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
   return (
     <div className="headerBody">
       <div className="headerWrapper">
-        <div className="iconSide">
+        <div className="iconSide" onClick={()=>Nav('/dashboard')}>
           <img src={Logo} alt="" />
         </div>
         <div className="menuSide" onClick={() => setShow(!show)}>
@@ -22,7 +23,7 @@ const Header = () => {
         {
           show ? 
         <div className="dropDown">
-          <div onClick={() => setShow(false)}> drop-down section</div>
+          <div><Menu setShow={setShow}/></div>
         </div>: null
         }
         <div className="headerSighUp">

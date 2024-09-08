@@ -15,10 +15,10 @@ const SideBar = () => {
       <div className='sideBarWrapper'>
         <div className='logo'>
           <div className='imgFull'>
-           <img src={Logo} alt="" className='full'/>
+           <img src={Logo} alt="" className='full' onClick={()=>Nav('/dashboard')}/>
           </div>
           <div className='logoSmall'>
-            <img src={Icon} alt="" />
+            <img src={Icon} alt="" onClick={()=>Nav('/dashboard')}/>
           </div>
         </div>
         <div className='navSide'>
@@ -28,7 +28,7 @@ const SideBar = () => {
             <NavLink to={'/track'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}><BiBook size={15}/><span>Track</span></NavLink>
             <NavLink to={'/payout'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}><BiWallet size={15}/><span>Payout</span></NavLink>
             <NavLink to={'/account'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}><FiSettings size={15}/><span>Account</span></NavLink>
-            <NavLink to={'/account'} className={({ isActive }) =>isActive ? "HeaderActive" : "HeaderNotActive"}><IoIosLogOut /><span>Account</span></NavLink>
+            <NavLink to={'/'} className={({ isActive }) =>isActive ? "logOut end" : "HeaderNotActive end"}><IoIosLogOut /><span>Logout</span></NavLink>
             
           </ul>
         </div>

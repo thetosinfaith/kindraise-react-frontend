@@ -24,6 +24,8 @@ tr {
   align-items: center;
   width: 100%;
   /* background-color: red; */
+  gap: 20px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -88,18 +90,25 @@ tr {
 .campaignTable {
   height: 300px;
   width: 100%;
+  overflow-x: auto;
   border: 1px solid rgb(179, 178, 178);
   /* background-color: aqua; */
   border-radius: 10px;
+
+  /* .tableHeadDetails {
+    background-color: lightgray;
+  } */
 }
 
 .tableHeader {
   height: 50px;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  /* border-top-left-radius: 10px; */
+  /* border-top-right-radius: 10px; */
   background: lightgray;
   display: flex;
+  gap: 20px;
+  /* background-color: red; */
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
@@ -108,7 +117,10 @@ tr {
 .createdCampaigns {
   height: 45px;
   width: 100%;
-  /* background-color: aqua; */
+  /* background-color: green; */
+  min-width: 200px;
+  gap: 20px;
+  /* overflow-x: auto; */
   border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: space-between;
@@ -122,27 +134,53 @@ tr {
 
 .tableHeadName {
   /* background-color: red; */
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
-  min-width: 150px;
+  min-width: 120px;
 }
 
+.tableHeadDetails1 {
+  background-color: lightgray;
+  gap: 20px;
+  width: 400px;
+  min-width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
 .tableHeadDetails {
-  /* background-color: aqua; */
-  gap: 50px;
+  /* background-color: lightgray; */
+  border-bottom: 1px solid lightgray;
+  gap: 20px;
+  width: 400px;
+  min-width: 250px;
+  display: flex;
+  justify-content: space-between;
 
   div {
-    width: 100px;
+    /* width: 100px; */
     /* background-color: red; */
   }
 }
 
-.tableHeadStatus {
+.tableHeadStatus1 {
   gap: 40%;
-  /* background-color: red; */
+  width: 100px;
+  background-color: lightgray;
 
   div {
     width: 50px;
+    /* background-color: red; */
+  }
+}
+.tableHeadStatus {
+  gap: 40%;
+  width: 100px;
+  border-bottom: 1px solid lightgray;
+  /* background-color: lightgray; */
+
+  div {
+    width: 50px;
+    /* background-color: red; */
   }
 }
 
@@ -154,9 +192,13 @@ tr {
   align-items: center;
 }
 .CampaignName {
-  max-width: 300px;
+  /* max-width: 300px;
   width: 100%;
-  min-width: 150px;
+  min-width: 150px; */
+
+  max-width: 250px;
+  width: 100%;
+  min-width: 120px;
   /* background-color: green; */
 }
 
@@ -166,6 +208,7 @@ tr {
 
 
 .campaignMenuSec {
+  min-width: 22px;
 
   span {
     display: flex;
@@ -185,11 +228,11 @@ tr {
 
 }
 
-@media screen and (max-width: 428px) {
+/* @media screen and (max-width: 428px) {
   .tableHeadDetails {
     display: none;
   }
-}
+} */
 
 
 .container {  

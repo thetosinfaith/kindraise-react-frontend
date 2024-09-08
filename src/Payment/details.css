@@ -1,0 +1,58 @@
+.PaymentDetailsBody {
+  background-color: white;
+  /* padding: 30px; */
+  border-radius: 10px;
+  min-width: 350px;
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  /* z-index: 999; */
+}
+
+.payDetailsWrapper {
+  height: 100%;
+  /* background-color: aqua; */
+  width: 100%;
+  padding: 20px 30px 20px 30px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  input {
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    width: 100%;
+  }
+
+  div {
+    height: max-content;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      width: 110px;
+      height: 40px;
+      border-radius: 30px;
+      border: none;
+      color: white;
+      background-color: var(--main-green);
+      cursor: pointer;
+    }
+  }
+
+  textarea {
+    max-height: 150px;
+    min-height: 150px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+  }
+}

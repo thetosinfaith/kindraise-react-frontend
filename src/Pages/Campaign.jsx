@@ -83,21 +83,21 @@ const Campaign = () => {
         <div className='campaignTable'>
           <div className='tableHeader'>
             <div className="tableHeadName tb">Campaign</div>
-            <div className="tableHeadDetails tb">
+            <div className="tableHeadDetails1 tb">
               <div>Created</div>
               <div>Raised</div>
               <div>Supporters</div>
             </div>
-            <div className="tableHeadStatus tb">
+            <div className="tableHeadStatus1 tb">
               <div>Status</div>
               <div className='emp'></div>
             </div>
           </div>
 
           <div className='createdCampaigns'>
-            <div className='CampaignName tb'>hello</div>
+            <div className='CampaignName tb'>hi</div>
             <div className='tableHeadDetails tb'>
-              <div>hello</div>
+              <div>hey</div>
               <div>hello</div>
               <div>hello</div>
             </div>
@@ -110,7 +110,7 @@ const Campaign = () => {
 
         <Table/>
 
-        <div className="container">
+        {/* <div className="container">
           <table className="full-width-border">
             <thead className="the">
               <tr className="bg-gray-100">
@@ -149,7 +149,7 @@ const Campaign = () => {
             <span>1</span>
             <button className="bg-gray">Next</button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -6,6 +6,23 @@
   color: white;
 }
 
+.logOut {
+  height: 40px;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    background-color: rgba(211, 211, 211, 0.171);
+  }
+}
+
 .HeaderActive {
   border-radius: 4px;
   color: black;
@@ -20,6 +37,10 @@
   align-items: center;
   background-color: rgb(7, 212, 7);
   border-radius: 10px;
+}
+
+.end {
+  margin-top: 80px;
 }
 
 .HeaderNotActive {

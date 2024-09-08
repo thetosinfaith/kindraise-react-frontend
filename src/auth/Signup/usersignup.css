@@ -1,0 +1,115 @@
+.userSignUpBody {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.signupLoginBox {
+  height: 9%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+
+  span {
+    color: var(--main-green);
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
+
+
+.signupUserSelectBox {
+  /* height: 89%; */
+  /* background-color: green; */
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.signupQus {
+  width: 60%;
+  min-width: 360px;
+  /* background-color: red; */
+}
+
+.signupUserBox {
+  height: max-content;
+  width: 60%;
+  min-width: 360px;
+  /* background-color: red; */
+  border: 1px solid lightgray;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid var(--main-green);
+    color: var(--main-green);
+  }
+}
+
+.signupUserIconBox{
+  height: 30px;
+  min-width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: lightgray;
+}
+
+.mediaSignupLoginBox {
+  height: 9%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  display: none;
+
+  span {
+    color: var(--main-green);
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
+
+.signupUserInfo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 590px) {
+  .signupLoginBox {
+    display: none;
+  }
+
+  .signupUserSelectBox {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+  }
+
+  .mediaSignupLoginBox {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+  }
+}

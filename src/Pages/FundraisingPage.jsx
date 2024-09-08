@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/fund.css";
 import FundHeader from "../components/Header/FundHeader";
 import { BsArrowDownShort } from "react-icons/bs";
 import Icon from '../assets/Icon.svg'
+import Amount from "../Payment/Amount";
+import Modal from "../Payment/Modal";
 
 const FundraisingPage = () => {
+  const [pay, setPay] = useState(false)
   const donor = [
     {
       name: "Anonymous",
@@ -38,6 +41,11 @@ const FundraisingPage = () => {
 
   return (
     <div className="fundRaiseBody">
+      {
+        pay ? 
+        <Modal setPay={setPay}/>:
+        null
+      }
       <div className="fund-head">
         <FundHeader />
       </div>
@@ -138,7 +146,7 @@ const FundraisingPage = () => {
           </div>
           <div className="donateBox">
             <div className="bonateInBox">
-              <button className="fundRaiseDonateBtn" onClick={num}>Donate</button>
+              <button className="fundRaiseDonateBtn" onClick={()=>setPay(true)}>Donate</button>
               <button className="fundRaiseShareBtn">Share with friends</button>
             </div>
           </div>
