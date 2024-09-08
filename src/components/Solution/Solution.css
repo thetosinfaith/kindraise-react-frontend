@@ -1,0 +1,136 @@
+.solution-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.solution-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.solution-raise h1 {
+  margin-bottom: 7%;
+  text-align: center;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #3C4144;
+}
+
+.solution-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.solution-content h1 {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3C4144;
+}
+
+.solution-content span {
+  color: #05CE78;
+}
+
+.solution-content p {
+  margin-bottom: 40px;
+  line-height: 1.5;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.solution-text-section-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5%;
+  padding: 20px 40px;
+  margin-top: 50px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solution-text-section {
+  flex: 1 1 10%;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+}
+
+.circle {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #448AFF;
+  color: white;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  z-index: 1;
+}
+
+.solution-text-container {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.solution-text-section p {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.solution-mini-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.solution-button {
+  padding: 10px 20px;
+  background: #05BB6D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Proxima Nova, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.23px;
+}
+
+@media (max-width: 768px) {
+  .solution-text-section-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .solution-text-section {
+      flex: 1 1 auto;
+      margin-bottom: 20px;
+      position: static;
+  }
+
+  .circle {
+      left: 0;
+      top: -10px;
+  }
+}

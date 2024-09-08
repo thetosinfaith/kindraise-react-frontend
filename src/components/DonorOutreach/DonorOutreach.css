@@ -1,0 +1,68 @@
+.donor-outreach-description-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.donor-outreach-description-container {
+  height: auto;
+  margin-top: 5%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%;
+}
+
+.donor-outreach-img-content {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.donor-outreach-description-content {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.donor-outreach-description-content h1 {
+  font-family: Proxima Nova, sans-serif;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58.46px;
+  text-align: left;
+}
+
+.donor-outreach-description-content span {
+  color: #05CE78;
+}
+
+.donor-outreach-description-content p {
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 43.85px;
+  text-align: left;
+}
+
+.donor-outreach-main-image {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .donor-outreach-description-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .donor-outreach-img-content,
+  .donor-outreach-description-content {
+    width: 100%; 
+    padding: 10px;
+  }
+}
