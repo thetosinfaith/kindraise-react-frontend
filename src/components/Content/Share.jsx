@@ -4,6 +4,7 @@ import { BiCopy } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import { GoDownload } from "react-icons/go";
 import { PiPrinterThin } from "react-icons/pi";
+import 'animate.css';
 
 const Share = () => {
   const Nav = useNavigate()
@@ -35,7 +36,7 @@ const Share = () => {
         </div>
         <div className="shareCodeBox">
           <div className="codeHolder">code</div>
-          <button className="codeDbBtn"><GoDownload />Download</button>
+          <button className="codeDbBtn animate__animated animate__fadeIn animate__infinite animate__slow"><GoDownload />Download</button>
           <button className="codeDbBtn"><PiPrinterThin />Print</button>
         </div>
       </div>

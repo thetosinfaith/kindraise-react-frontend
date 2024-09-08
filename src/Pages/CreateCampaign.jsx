@@ -16,6 +16,16 @@ const CreateCampaign = () => {
   console.log(Number(title))
 
   const [activeComponent, setActiveComponent] = useLocalStorage('A');
+  const [activeHead, setActiveHead] = useLocalStorage('A')
+  useEffect(()=>{
+    if (activeComponent === "B") {
+      setActiveComponent("B");
+    } else if (activeComponent === "C"){
+      setActiveComponent("C");
+    } else {
+      setActiveComponent("A");
+    }
+  },[])
 
   const renderComponent = () => {  
     switch (activeComponent) {  
@@ -44,7 +54,6 @@ const CreateCampaign = () => {
     setActiveComponent('C')
   }
 
-  const [activeHead, setActiveHead] = useLocalStorage('A')
   return (
     <div className="createBody">
       <h2 className="createName">Create a New Campaigns</h2>

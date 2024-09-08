@@ -1,0 +1,31 @@
+.loadingBody {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingWrapper {
+  height: 300px;
+  /* background-color: red; */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-end;
+
+  img {
+
+  }
+
+  div {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+}
