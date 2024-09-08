@@ -1,0 +1,29 @@
+.partners-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 50vh;
+  }
+  
+  .partners-text {
+    text-align: left; 
+    max-width: 50%; 
+    margin-right: 10px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29.23px;
+  }
+  
+  .partners-image {
+    display: flex; 
+    justify-content: center; 
+    max-width: 40%; 
+  }
+  
+  .partners-image img {
+    max-width: 80%; 
+    height: auto;
+  }
+  

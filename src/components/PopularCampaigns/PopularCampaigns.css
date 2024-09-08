@@ -1,0 +1,224 @@
+.PopularCampaigns-section {
+    padding: 70px;
+    text-align: center;
+    margin-top: -2%;
+}
+
+.PopularCampaigns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.PopularCampaigns-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.PopularCampaigns-content h1 {
+    font-family: Proxima Nova, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3C4144;
+}
+
+.PopularCampaigns-content p {
+    margin-bottom: 40px;
+    line-height: 1.5;
+    font-family: Proxima Nova, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.campaigns-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.campaign-img-content,
+.campaign-item {
+    flex: 1;
+    max-width: 30%;
+    text-align: left;
+    border-radius: 20px;
+    box-sizing: border-box;
+    outline: 2px solid #E7E7E8;
+}
+
+.text-content {
+    padding: 15px;
+}
+
+.text-content .text-one{
+    font-family: Proxima Nova, sans-serif;
+    margin-bottom: 12px;
+    font-size: 22.18px;
+    font-weight: 700;
+    line-height: 33.27px;
+    text-align: left;
+    color: #3C4144;
+}
+
+.text-content .text-two{
+font-size: 16.25px;
+font-weight: 400;
+line-height: 29.33px;
+text-align: left;
+color: #5C6062;
+}
+
+.text-content p{
+    color: #5C6062;
+}
+
+.text-fee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.text-fee .left,
+.text-fee .right {
+    font-family: Proxima Nova, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.92px;
+    color: black;
+}
+
+.text-fee .right {
+    text-align: right;
+    color: #05BB6D;
+}
+
+.campaign-img-content .one,
+.campaign-item .one {
+    font-family: Proxima Nova, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.36px;
+    color: black;
+}
+
+.campaign-img-content p,
+.campaign-item p {
+    font-family: Proxima Nova, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.92px;
+    margin-top: 10px;
+    color: black;
+}
+
+.campaign-img-content .two,
+.campaign-item .two {
+    font-family: Proxima Nova, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.36px;
+    margin-bottom: 40px;
+}
+
+.campaign-img-content img,
+.campaign-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+progress {
+    margin-top: 12px;
+    width: 100%;
+    height: 7px;
+    appearance: none;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #E7E7E8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-value {
+    background-color: #05BB6D;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.campaign-button {
+    padding: 10px 20px;
+    background: #05BB6D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Proxima Nova, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29.23px;
+}
+
+@media (max-width: 1024px) {
+    .campaigns-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .campaign-img-content,
+    .campaign-item {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .campaigns-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .campaign-img-content,
+    .campaign-item {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .campaign-button {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .campaign-img-content h1,
+    .campaign-item h1 {
+        font-size: 24px;
+    }
+
+    .campaign-img-content .one,
+    .campaign-item .one {
+        font-size: 18px;
+    }
+
+    .campaign-img-content p,
+    .campaign-item p {
+        font-size: 14px;
+    }
+}

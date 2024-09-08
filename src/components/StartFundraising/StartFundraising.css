@@ -1,0 +1,39 @@
+.start-fundraising-container {
+  margin-top: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  background-color: #1D3A6B;
+  height: 30vh;
+  padding: 0 20px;
+}
+
+.start-fundraising-text {
+  text-align: left;
+  max-width: 40%;
+  font-family: 'Proxima Nova', sans-serif;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 51.16px;
+}
+
+.start-fundraising-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button {
+  padding: 10px 20px;
+  background: #05BB6D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.23px;
+}

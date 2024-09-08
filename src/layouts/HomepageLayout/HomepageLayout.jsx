@@ -1,19 +1,33 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
 import Hero from '../../components/Hero/Hero'
-import FundraisingOptions from '../../components/FundraisingOptions/FundraisingOptions'
+import FundraisingPages from "../../components/FundraisingPages/FundraisingPages"
+import PopularCampaigns from '../../components/PopularCampaigns/PopularCampaigns'
+import DonorEngagement from '../../components/DonorEngagement/DonorEngagement'
+import DonorOutreach from '../../components/DonorOutreach/DonorOutreach'
+import Solution from '../../components/Solution/Solution'
+import SecurityAssured from '../../components/SecurityAssured/SecurityAssured'
+import OurPartners from '../../components/OurPartners/OurPartners'
+import StartFundraising from '../../components/StartFundraising/StartFundraising'
+import Footer from '../../components/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 import './HomepageLayout.css'
-import QRDescription from '../../components/QRDescription/QRDescription'
 
 const HomepageLayout = () => {
   return (
     <section className='landingpage-container'>
       <Header/>
       <Hero/>
+      <PopularCampaigns/>
+      <FundraisingPages/>
+      <DonorEngagement/>
+      <DonorOutreach/>
+      <Solution/>
+      <SecurityAssured/>
+      <StartFundraising/>
+      <OurPartners/>
+      <Footer/>
       <Outlet/>
-      <FundraisingOptions/>
-      <QRDescription/>
     </section>
   )
 }

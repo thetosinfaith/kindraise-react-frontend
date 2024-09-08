@@ -1,0 +1,71 @@
+.donor-engagement-description-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 50px;
+  }
+  
+  .donor-engagement-description-container {
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px; 
+    width: 90%; 
+  }
+  
+  .donor-engagement-description-content {
+    flex: 1; 
+    padding: 10px; 
+    margin-bottom: 0;
+  }
+  
+  .donor-engagement-description-content h1 {
+    font-family: Proxima Nova, sans-serif;
+    margin-bottom: 20px; 
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.46px;
+    text-align: left;
+  }
+  
+  .donor-engagement-description-content span {
+    color: #05CE78;
+  }
+  
+  .donor-engagement-description-content p {
+    font-family: Proxima Nova, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 43.85px;
+    text-align: left;
+  }
+  
+  .donor-engagement-img-content {
+    flex: 1;
+    margin-bottom: 0;
+    padding: 10px; 
+  }
+  
+  .donor-engagement-main-image {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+
+  
+  @media (max-width: 768px) {
+    .donor-engagement-description-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .donor-engagement-img-content,
+    .donor-engagement-description-content {
+      width: 100%; 
+      padding: 10px;
+    }
+  }
+  

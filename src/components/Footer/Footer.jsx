@@ -1,9 +1,58 @@
-import React from 'react'
+import React from 'react';
+import FooterLogo from '../../assets/blueshade-logo.png'
+import Facebook from '../../assets/fb-icon.png'
+import Instagram from '../../assets/instagram-icon.png'
+import Telegram from '../../assets/telegram-icon.png'
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="footer-container">
+      <div className="footer-grid">
+        <div className="footer-item footer-logo">
+          <img src={FooterLogo} alt="" />
+          <p className='footer-prescb'>Kindraise is dedicated to providing you with the tools you need to raise money for whatever your cause may be.</p>
+        </div>
+        <div className="footer-item">
+          <h2>Product</h2>
+          <ul>
+            <li>Fundraising Page</li>
+            <li>Nonprofit CRM</li>
+            <li>Donor Engagement</li>
+          </ul>
+        </div>
+        <div className="footer-item">
+          <h2>Privacy</h2>
+          <ul>
+            <li>Privacy Notice</li>
+            <li>Cookies Policy</li>
+          </ul>
+        </div>
+        <div className="footer-item">
+          <h2>Company</h2>
+          <ul>
+          <li>About Us</li>
+          <li>FAQS</li>
+          <li>Teams</li>
+          <li>Pricing</li>
+          <li>Careers</li>
+          <li>Contact Us</li>
+          </ul>
+        </div>
 
-export default Footer
+        <div className="social-media-icon">
+          <img src={Facebook} alt="" />
+          <img src={Telegram} alt="" />
+          <img src={Instagram} alt="" />
+        </div>
+        
+        
+        <div className="footer-item footer-bottom" style={{ gridColumn: 'span 5' }}>
+          <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
