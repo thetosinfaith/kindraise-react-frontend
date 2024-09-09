@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Routes, Route } from "react-router-dom";
 import DashboardLayout from "./layouts/DashboardLayout/DashboardLayout";
 import HomepageLayout from "./layouts/HomepageLayout/HomepageLayout";
 import Signup from "./auth/Signup/Signup";
@@ -16,7 +16,7 @@ import FundraisingPage from "./pages/FundraisingPage/FundraisingPage";
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         {/* Public Auth Routes */}
         <Route path="/login" element={<Login />} />
@@ -44,7 +44,7 @@ const App = () => {
         {/* Undefined paths */}
         <Route path="*" element={<div>Page not found</div>} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 };
 
