@@ -10,22 +10,23 @@
 
 .logoSec {
   height: 59px;
+  height: 8vh;
   background: #ffffff;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-}
 
-.logoSec img {
-  width: 200px; 
-  height: auto; 
+  img {
+    height: 70%;
+  }
 }
 
 .formSec {
   height: 92vh;
   width: 100%;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +39,7 @@
   height: max-content;
   padding: 30px;
   margin: 20px;
-  width: max-content;
+  width: 100%;
   max-width: 428.56px;
   background: #ffffff;
   /* background-color: red; */
@@ -48,7 +49,7 @@
   align-items: center;
   margin-bottom: 50px;
   /* background-color: aqua; */
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 .formWrapper {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./login.css";
+import "./Login.css";
 import { useNavigate } from "react-router-dom";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/Logo.svg';
 
 const Login = () => {
   const Nav = useNavigate();
@@ -41,7 +41,7 @@ const Login = () => {
               Sign in
             </button>
             <div className="sighUpCreateAcc">
-            Don't have a KindRaise account? <span onClick={()=>Nav(-1)}> Create one</span>
+              Dont have a kind raise account? <span onClick={()=>Nav(-1)}>Create one</span>
             </div>
           </div>
         </div>

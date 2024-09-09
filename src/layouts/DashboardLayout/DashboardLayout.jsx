@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../../components/Header/Header";
 import { Outlet } from "react-router-dom";
 import "./DashboardLayout.css";
 import SideBar from "../../components/Sidebar/SideBar";
+import DashboardHeader from "../../components/DashboardHeader/DashboardHeader";
 
 const DashboardLayout = () => {
   return (
@@ -12,7 +12,7 @@ const DashboardLayout = () => {
       </div>
       <div className="otherSide">
         <div className="userLayoutHeader">
-          <Header />
+          <DashboardHeader />
         </div>
         <div className="holder">
           <Outlet />

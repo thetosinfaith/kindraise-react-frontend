@@ -1,0 +1,117 @@
+.goalBody {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    /* background-color: aqua; */
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .goalTitleBox {
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    div {
+      width: 65%;
+      font-size: 15px;
+    }
+  }
+  
+  .goalInputBox {
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    justify-content: space-between;
+    min-width: 65%;
+    /* min-width: ; */
+  }
+  
+  .goalInput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    span {
+      color: red;
+    }
+  
+    input {
+      width: 100%;
+      height: 90%;
+      padding-left: 5px;
+      outline: none;
+      border: none;
+    }
+  }
+  
+  input {
+    outline: none;
+  }
+  
+  .goalFirstText {
+    width: 100%;
+    max-width: 250px;
+    color: gray;
+    /* background-color: rgb(131, 167, 66); */
+    font-size: 15px;
+  }
+  
+  .goalInputContainer {
+    height: 40px;
+    /* background-color: red; */
+    border-radius: 10px;
+    width: 100%;
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    border: 1px solid lightgray;
+  }
+  
+  .goalDateBox {
+    /* background-color: red; */
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .goalDateText {
+    /* width: 30%; */
+    color: gray;
+    font-size: 15px;
+  }
+  
+  .SaveBtnBox {
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .goalSaveBtn {
+    width: 80px;
+    height: 40px;
+    background-color: #05BB6D;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  
+    &:hover {
+      background-color: var(--main-green);
+    }
+  
+  }

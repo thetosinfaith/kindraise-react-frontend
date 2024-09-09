@@ -1,0 +1,163 @@
+.contentBody {
+    height: max-content;
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  }
+  
+  .contentTitleBox {
+    padding: 20px;
+    /* background-color: aqua; */
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .titleTextBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    div {
+      width: 70%;
+      font-size: 15px;
+    }
+    /* background-color: red; */
+    /* height: 200px; */
+  }
+  
+  .titleInputBox {
+    margin-bottom: 30px;
+    width: 70%;
+    /* background-color: cornflowerblue; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .titleInput {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: red; */
+  
+    span {
+      color: red;
+    }
+    /* background-color: aqua; */
+  
+    input {
+      width: 100%;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      height: 40px;
+    }
+  
+    
+  }
+  
+  .photoInput {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 300px;
+    /* background-color: red; */
+  
+    span {
+      color: red;
+    }
+  }
+  
+  .storyInput {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 300px;
+    /* background-color: red; */
+  
+    span {
+      color: red;
+    }
+    /* background-color: aqua; */
+  
+    /* input {
+      width: 100%;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      height: 300px;
+      padding: 10px;
+      outline: none;
+    } */
+  
+    textarea {
+      width: 100%;
+      /* max-width: 100%; */
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      min-height: 300px;
+      max-height: 300px;
+      padding: 10px;
+      outline: none;
+    }
+  
+  }
+  
+  .contentStoryBox {
+    padding: 20px;
+    /* background-color: aqua; */
+    width: 100%;
+    height: max-content;
+    /* border-bottom: 1px solid lightgray; */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .photoInputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: red; */
+    width: 70%;
+  
+    .storyPhotoBox {
+      width: 100%;
+      /* border: 1px solid lightgray; */
+      border-radius: 10px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+  }
+  
+  .photoBox {
+    height: 200px;
+    width: 200px;
+    /* background-color: aqua; */
+    border-radius: 20px;
+    border: 1px dashed gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  
+    label {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .postImg {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10%;
+  }

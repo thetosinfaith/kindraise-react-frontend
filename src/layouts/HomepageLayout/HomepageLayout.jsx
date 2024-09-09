@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
 import Hero from '../../components/Hero/Hero'
-import FundraisingPages from "../../components/FundraisingPages/FundraisingPages"
+import Fundraising from "../../components/Fundraising/Fundraising"
 import PopularCampaigns from '../../components/PopularCampaigns/PopularCampaigns'
 import DonorEngagement from '../../components/DonorEngagement/DonorEngagement'
 import DonorOutreach from '../../components/DonorOutreach/DonorOutreach'
@@ -19,7 +19,7 @@ const HomepageLayout = () => {
       <Header/>
       <Hero/>
       <PopularCampaigns/>
-      <FundraisingPages/>
+      <Fundraising/>
       <DonorEngagement/>
       <DonorOutreach/>
       <Solution/>

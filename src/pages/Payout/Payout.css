@@ -4,3 +4,122 @@
   overflow-y: auto;
   padding: 20px;
 }
+
+.payoutContent {
+  width: 100%;
+  /* background-color: aqua; */
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.payoutAccDetailsBox {
+  height: 100%;
+  width: 365px;
+  /* background-color: red; */
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  div {
+    /* background-color: green; */
+    max-width: 250px;
+  }
+
+  button {
+    height: 40px;
+    width: 90px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--sea-weed-green);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+
+
+    &:hover {
+      background-color: var(--main-green);
+    }
+  }
+}
+.payoutBankDetails {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  /* background-color: aqua; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.payoutBankBox {
+  background-color: white;
+  height: 200px;
+  max-width: 400px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  width: 100%;
+  display: flex;
+}
+
+.payoutBankIcon {
+  width: 35px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.payoutWidDetails {
+  /* background-color: green; */
+  height: max-content;
+  width: max-content;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+
+  .norBal {
+    color: gray;
+  }
+
+  .WithBal {
+    font-weight: bold;
+  }
+
+  .withdraBtn {
+    height: 40px;
+    width: max-content;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--sea-weed-green);
+    border: none;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+      background-color: var(--main-green);
+    }
+  }
+}
+
+.payoutTableBox {
+  
+}
+
+@media screen and (max-width:950px) {
+  .payoutWidDetails {
+    width: 100%;
+  }
+}

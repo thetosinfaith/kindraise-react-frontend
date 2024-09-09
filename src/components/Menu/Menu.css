@@ -1,0 +1,35 @@
+.menuBody {
+    height: 90vh;
+    width: 100%;
+    background-color: transparent;
+    padding: 30px;
+  }
+  
+  .menuWrapper {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  
+    ul {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      list-style-type: none;
+  
+      li {
+        background-color: var(--main-green);
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        border-radius: 10px;
+        color: white;
+      }
+    }
+  }
+  
+  .logoutMenu {
+    margin-top: 30px;
+  }
