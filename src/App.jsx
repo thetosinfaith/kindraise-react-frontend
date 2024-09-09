@@ -4,7 +4,7 @@ import HomepageLayout from "./layouts/HomepageLayout/HomepageLayout";
 import Signup from "./auth/Signup/Signup";
 import Login from "./auth/Login/Login";
 import PasswordChange from "./auth/PasswordChanged/PasswordChange";
-import ResetPassword from "./auth/ResetPassword/ResetPassword";
+import ResetPassword from "./auth/Resetpassword/ResetPassword";
 import CreateNewPassword from "./auth/CreateNewPassword/CreateNewPassword";
 import DashBoard from "./pages/Dashboard/Dashboard";
 import Campaign from "./pages/Campaign/Campaign";
