@@ -5,6 +5,7 @@ import { BsArrowDownShort } from "react-icons/bs";
 import Icon from '../assets/Icon.svg'
 import Amount from "../Payment/Amount";
 import Modal from "../Payment/Modal";
+import Tree from '../assets/Tree.svg'
 
 const FundraisingPage = () => {
   const [pay, setPay] = useState(false)
@@ -57,7 +58,7 @@ const FundraisingPage = () => {
         <div className="fundMainContentWrapper">
           <div className="fundContentBox">
             <div className="fundContentInBox">
-              <img src="" alt="pic" />
+              <img src={Tree} alt="pic" />
             </div>
 
             <div className="fundRaiseTrackBox">

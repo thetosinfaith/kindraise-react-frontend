@@ -3,6 +3,7 @@ import './modal.css'
 import Amount from './Amount';
 import Bank from './Bank';
 import PaymentDetails from './PaymentDetails';
+// import Tree from '../assets/Tree.svg';
 
 const Modal = ({setPay}) => {
 

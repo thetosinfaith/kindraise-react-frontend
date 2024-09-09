@@ -5,10 +5,13 @@ import { BsQuestionCircle } from "react-icons/bs";
 import Logo from "../../assets/Logo.svg";
 import Icon from "../../assets/Icon.svg";
 import Menu from "./Menu";
+import 'animate.css';
+import { HiMenuAlt3 } from "react-icons/hi";
+import { BiMenuAltLeft } from "react-icons/bi";
 
 const Header = () => {
   const [show, setShow] = useState(false);
-  console.log(show);
+  // console.log(show);
 
   const Nav = useNavigate();
   return (
@@ -18,7 +21,7 @@ const Header = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="menuSide" onClick={() => setShow(!show)}>
-          {show ? "close" : "menu"}
+          {show ? <BiMenuAltLeft size={25}/> : <HiMenuAlt3 size={25}/>}
         </div>
         {
           show ? 

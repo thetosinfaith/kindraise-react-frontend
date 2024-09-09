@@ -82,12 +82,17 @@
   color: black;
   background-color: lightgray;
   border: none;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   font-size: 17px;
 
   &:hover {
-    background-color: rgb(185, 185, 185);
+    /* background-color: rgb(185, 185, 185); */
+    color: #05BB6D;
   }
 }
 
@@ -95,7 +100,7 @@
   height: 140px;
   width: 140px;
   /* background-color: red; */
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 .shareLinkBox {

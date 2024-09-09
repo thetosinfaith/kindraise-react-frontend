@@ -13,7 +13,7 @@ const CreateCampaign = () => {
   //   // fetch data from local storage and set state
   // },[])
   const [title, setTitle] = useState()
-  console.log(Number(title))
+  // console.log(Number(title))
 
   const [activeComponent, setActiveComponent] = useLocalStorage('A');
   const [activeHead, setActiveHead] = useLocalStorage('A')

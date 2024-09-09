@@ -1,5 +1,6 @@
 import React from 'react'
 import './bank.css'
+import Kora from '../assets/Kora.svg'
 
 const Bank = ({setActiveComponent,setPay={setPay}}) => {
   return (
@@ -14,7 +15,7 @@ const Bank = ({setActiveComponent,setPay={setPay}}) => {
             <input type="radio" name="" id="" />Pay with Card or Bank
           </div>
           <div>
-            Kora
+            <img src={Kora} alt="" />
           </div>
         </div>
         <div className='continueBox'>
