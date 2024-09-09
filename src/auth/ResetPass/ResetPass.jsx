@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./ResetPassword.css";
+import "./ResetPass.css";
 import { useNavigate } from "react-router-dom";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import logo from '../../assets/Logo.svg';
 
-const ResetPassword = () => {
+const ResetPass= () => {
   const Nav = useNavigate();
   const [show, setShow] = useState(true);
   return (
@@ -38,4 +38,4 @@ const ResetPassword = () => {
   );
 };
 
-export default ResetPassword;
+export default ResetPass;
