@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import logo from '../../assets/Logo.svg';
 
-const Login = () => {
+const ResetPassword = () => {
   const Nav = useNavigate();
   const [show, setShow] = useState(true);
   return (
@@ -38,4 +38,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ResetPassword;
