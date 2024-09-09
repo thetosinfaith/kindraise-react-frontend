@@ -1,0 +1,30 @@
+.table-container {  
+  overflow-x: auto;
+  border-radius: 10px;  
+  border: 1px solid lightgray;
+}  
+
+.campaign-table {  
+  width: 100%;  
+  border-collapse: collapse;  
+  background-color: #f0f0f0; /* Similar to bg-gray-200 */  
+}  
+
+.table-header {  
+  background-color: #d0d0d0; /* Similar to bg-gray-300 */  
+}  
+
+.table-header-cell {  
+  padding: 10px;  
+  text-align: left;  
+  border: 1px solid #ccc;  
+}  
+
+.table-row {  
+  background-color: whitesmoke; /* White background for rows */  
+}  
+
+.table-cell {  
+  padding: 10px;  
+  /* border: 1px solid #ccc;   */
+}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import { useNavigate } from 'react-router-dom';
-import OfficialLogo from '../../assets/whiteLogo.png';
+import OfficialLogo from '../../assets/logo.svg';
 import { GoChevronDown } from "react-icons/go";
 
 const Header = () => {

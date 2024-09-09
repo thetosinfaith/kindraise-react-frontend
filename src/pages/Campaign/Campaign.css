@@ -5,6 +5,10 @@
   padding: 20px;
 }
 
+tr {
+  border-left: none;
+}
+
 .campaignContent {
   height: max-content;
   /* background-color: turquoise; */
@@ -20,6 +24,8 @@
   align-items: center;
   width: 100%;
   /* background-color: red; */
+  gap: 20px;
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
@@ -66,29 +72,43 @@
 .campaignBtn {
   height: 40px;
   width: 150px;
-  background-color: rgb(18, 154, 18);
+  /* background-color: rgb(18, 154, 18); */
   border: none;
+  background: #05BB6D;
+
   color: white;
   font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #049255;
+  }
 }
 
 .campaignTable {
   height: 300px;
   width: 100%;
+  overflow-x: auto;
   border: 1px solid rgb(179, 178, 178);
   /* background-color: aqua; */
   border-radius: 10px;
+
+  /* .tableHeadDetails {
+    background-color: lightgray;
+  } */
 }
 
 .tableHeader {
   height: 50px;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  /* border-top-left-radius: 10px; */
+  /* border-top-right-radius: 10px; */
   background: lightgray;
   display: flex;
+  gap: 20px;
+  /* background-color: red; */
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
@@ -97,37 +117,70 @@
 .createdCampaigns {
   height: 45px;
   width: 100%;
-  /* background-color: aqua; */
+  /* background-color: green; */
+  min-width: 200px;
+  gap: 20px;
+  /* overflow-x: auto; */
   border-bottom: 1px solid lightgray;
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+
+  &:hover {
+    background: #F1F1F2;
+  }
 }
 
 .tableHeadName {
   /* background-color: red; */
-  max-width: 300px;
+  max-width: 250px;
   width: 100%;
-  min-width: 150px;
+  min-width: 120px;
 }
 
+.tableHeadDetails1 {
+  background-color: lightgray;
+  gap: 20px;
+  width: 400px;
+  min-width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
 .tableHeadDetails {
-  /* background-color: aqua; */
-  gap: 50px;
+  /* background-color: lightgray; */
+  border-bottom: 1px solid lightgray;
+  gap: 20px;
+  width: 400px;
+  min-width: 250px;
+  display: flex;
+  justify-content: space-between;
 
   div {
-    width: 100px;
+    /* width: 100px; */
     /* background-color: red; */
   }
 }
 
-.tableHeadStatus {
+.tableHeadStatus1 {
   gap: 40%;
-  /* background-color: red; */
+  width: 100px;
+  background-color: lightgray;
 
   div {
     width: 50px;
+    /* background-color: red; */
+  }
+}
+.tableHeadStatus {
+  gap: 40%;
+  width: 100px;
+  border-bottom: 1px solid lightgray;
+  /* background-color: lightgray; */
+
+  div {
+    width: 50px;
+    /* background-color: red; */
   }
 }
 
@@ -139,9 +192,13 @@
   align-items: center;
 }
 .CampaignName {
-  max-width: 300px;
+  /* max-width: 300px;
   width: 100%;
-  min-width: 150px;
+  min-width: 150px; */
+
+  max-width: 250px;
+  width: 100%;
+  min-width: 120px;
   /* background-color: green; */
 }
 
@@ -151,6 +208,7 @@
 
 
 .campaignMenuSec {
+  min-width: 22px;
 
   span {
     display: flex;
@@ -170,8 +228,105 @@
 
 }
 
-@media screen and (max-width: 428px) {
+/* @media screen and (max-width: 428px) {
   .tableHeadDetails {
     display: none;
   }
+} */
+
+
+.container {  
+  /* max-width: 1200px; Adjust based on your design   */
+  /* margin-left: auto;   */
+  /* margin-right: auto;   */
+  /* background-color: red; */
+  width: 100%;
+  /* padding: 1rem;   */
+  border-radius: 10px;
+  /* border: none; */
+} 
+
+.full-width-border {  
+  min-width: 100%; /* Sets the minimum width to 100% of its parent */  
+  border-width: 1px; /* Sets the border width to 1 pixel */  
+  border-style: solid; /* Sets the border style to solid (essential for visible borders) */  
+  /* border: 1px solid rgb(179, 178, 178);  */
+  border-radius: 10px; 
+  /* background-color: red;  */
 }
+
+.bg-gray-100 {  
+  /* background-color: #F7FAFC; */
+  /* background-color: red;  */
+  /* background-color: lightgray;  */
+  border: 0;
+  /* background-color: red; */
+}
+
+.border-style {  
+  /* border-width: 1px;   */
+  /* border-style: solid;    */
+  /* border-color: #D1D5DB;  */
+  /* padding: 0.5rem;  */
+  /* background-color: red;  */
+  /* border: none; */
+}  
+
+.border-bottom {  
+  border-bottom-width: 1px; 
+  border-bottom-style: solid; 
+  border-bottom-color: lightgray; 
+  /* background-color: red; */
+} 
+
+.the {
+  background-color: lightgray;
+
+  th {
+    border-color: red;
+  }
+
+  tr {
+    border-color: red;
+  }
+}
+
+.border-style {  
+  border-width: 1px;  
+  border: 0;
+  border-style: solid; 
+  /* width: 50%; */
+  border-color: #D1D5DB; 
+  padding: 0.5rem;
+  /* background-color: red; */
+}  
+
+.text-green {  
+  color: #38A169; /* Green color corresponding to Tailwind's green-500 */  
+} 
+
+.flex-justify-between {  
+  display: flex; /* Enables flexbox layout */  
+  justify-content: space-between; /* Distributes space between items */  
+  margin-top: 1rem; /* Applies a top margin of 1rem (4 * 0.25rem) */  
+}
+
+.bg-gray {  
+  background-color: #E2E8F0; /* Light gray color corresponding to Tailwind's gray-200 */  
+  padding: 0.5rem; /* Applies padding of 0.5rem (2 * 0.25rem) */  
+  border-radius: 0.25rem; /* Applies a border radius of 0.25rem for rounded corners */  
+}  
+
+.p-2 {  
+}  
+
+.rounded {  
+}
+
+/* td {
+  border: 3px solid red;
+}
+
+th {
+  border: 3px solid red;
+} */

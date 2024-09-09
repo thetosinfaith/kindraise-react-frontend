@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./resetpassword.css";
+import "./ResetPassword.css";
 import { useNavigate } from "react-router-dom";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/Logo.svg';
 
 const Login = () => {
   const Nav = useNavigate();

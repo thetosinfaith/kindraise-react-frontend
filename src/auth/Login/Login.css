@@ -10,16 +10,16 @@
 
 .logoSec {
   height: 59px;
+  height: 8vh;
   background: #ffffff;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-}
 
-.logoSec img {
-  width: 200px; 
-  height: auto; 
+  img {
+    height: 70%;
+  }
 }
 
 .formSec {

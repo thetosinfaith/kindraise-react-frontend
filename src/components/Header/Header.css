@@ -6,16 +6,19 @@
 
 .header {
   width: 80%;
-  height: 6vh;
+  height: 8vh;
   display: flex;
   justify-content: center; 
   align-items: center; 
   padding: 5px 10px; 
   background-color: white;
+  transition: padding 0.3s ease;
 }
 
 .logo {
-  width: 130.34px;
+  margin-top: 4%;
+  max-height: 50px;
+  width: auto;
   height: auto;
   cursor: pointer;
 }
@@ -43,7 +46,6 @@
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
-  width: auto;
 }
 
 .nav-item {
@@ -70,6 +72,14 @@
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
 }
 
 .dropdown-item {
@@ -98,8 +108,12 @@
   font-family: Proxima Nova, sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 19.49px;
   text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #04a65f; /* Slightly darker green for hover */
 }
 
 .login-button {
@@ -107,12 +121,19 @@
   color: black;
   padding: 12px 20px;
   border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .signup-button {
   padding: 12px 30px;
   border-radius: 20px;
   color: white;
+  background-color: #05BB6D;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #04a65f; /* Slightly darker green for hover */
 }
 
 @media screen and (max-width: 768px) {
@@ -120,6 +141,10 @@
     flex-direction: column;
     padding: 15px; 
     height: auto;
+  }
+
+  .logo {
+    max-height: 40px;
   }
 
   .nav {

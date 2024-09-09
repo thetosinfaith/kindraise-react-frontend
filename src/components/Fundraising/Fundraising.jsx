@@ -1,8 +1,8 @@
 import React from 'react';
 import Roots from "../../assets/roots.png";
-import './FundraisingPages.css';
+import './Fundraising.css'
 
-const FundraisingPages = () => {
+const Fundraising = () => {
   return (
     <div className='FundraisingPages-section'>
       <div className='FundraisingPages-container'>
@@ -32,4 +32,4 @@ const FundraisingPages = () => {
   );
 };
 
-export default FundraisingPages;
+export default Fundraising;

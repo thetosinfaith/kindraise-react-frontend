@@ -1,0 +1,91 @@
+.indSignupBody {
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+  }
+  
+  .indSignupInputBox {
+    height: max-content;
+    /* background-color: rgb(207, 207, 207); */
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 50px;
+  }
+  
+  .indSignupQusBox {
+    width: 60%;
+    min-width: 360px;
+    /* background-color: aqua; */
+  }
+  
+  .indInputHoldBox {
+    height: max-content;
+    width: 60%;
+    min-width: 360px;
+    /* background-color: red; */
+    display: flex;
+    gap: 9px;
+    flex-direction: column;
+  
+    input {
+      height: 50px;
+      border: 1px solid lightgray;
+      /* outline: 1px solid var(--main-green); */
+      border-radius: 10px;
+      padding-left: 20px;
+      outline-color: var(--main-green);
+    }
+  }
+  
+  .signupInputClone {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    input {
+      width: 93%;
+      border: none;
+      height: 90%;
+    }
+  }
+  
+  .signupPassHintBox {
+    height: max-content;
+    margin-top: -30px;
+    width: 60%;
+    min-width: 360px;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .TermsBox {
+    width: 60%;
+    min-width: 360px;
+    height: max-content;
+  }
+  
+  .signupIndCreateBtn {
+    min-width: 360px;
+    width: 60%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--main-green);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }

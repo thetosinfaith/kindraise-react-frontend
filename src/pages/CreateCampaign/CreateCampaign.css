@@ -1,0 +1,62 @@
+.createBody {
+    height: 90vh;
+    width: 100%;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .createName {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  
+  }
+  
+  .createContent {
+    height: max-content;
+    /* background-color: turquoise; */
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .createHead {
+    height: max-content;
+    align-items: center;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .createSmallHeader {
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: max-content;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+  
+    div {
+      cursor: pointer;
+      font-weight: bold;
+      color: rgb(41, 41, 41);
+      transition: color 0.3s ease;
+      border-radius: 10px;
+      padding: 5px;
+    }
+    .active {
+      background: #E6FAF2;
+      color: #049255;
+      /* color: red; */
+    }
+  }
+  
+  .notActive {
+    /* color: black; */
+  }
+  

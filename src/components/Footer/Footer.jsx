@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterLogo from '../../assets/blueshade-logo.png'
+import FooterLogo from '../../assets/logo.svg'
 import Facebook from '../../assets/fb-icon.png'
 import Instagram from '../../assets/instagram-icon.png'
 import Telegram from '../../assets/telegram-icon.png'
