@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './nposignup.css'
+import './NpoSignup.css'
 import { BsEye, BsEyeSlash } from 'react-icons/bs'
 
 const NpoSignup = ({setActiveSignupPage}) => {

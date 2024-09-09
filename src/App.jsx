@@ -1,11 +1,11 @@
-import { HashRouter as Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import DashboardLayout from "./layouts/DashboardLayout/DashboardLayout";
 import HomepageLayout from "./layouts/HomepageLayout/HomepageLayout";
 import Signup from "./auth/Signup/Signup";
 import Login from "./auth/Login/Login";
 import PasswordChange from "./auth/PasswordChanged/PasswordChange";
 import CreateNewPassword from "./auth/CreateNewPassword/CreateNewPassword";
-import ResetPassword from "./auth/ResetPass/ResetPass";
+import ResetPassword from "./auth/ResetPassword/ResetPassword";
 import DashBoard from "./pages/Dashboard/Dashboard";
 import Campaign from "./pages/Campaign/Campaign";
 import Donor from "./pages/Donor/Donor";
