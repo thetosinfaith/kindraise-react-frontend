@@ -25,7 +25,7 @@
   
   .hero-content h1 {
     font-family: Proxima Nova, sans-serif;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: 600;
     line-height: 87.7px;
     text-align: left;
@@ -54,7 +54,7 @@
   .hero-button{
     margin-top: 10%;
     padding: 12px 30px;
-    border-radius: 5px;
+    border-radius: 8px;
     color: white;
     background: #05BB6D;
     border: none;

@@ -35,7 +35,7 @@ const Share = () => {
         </div>
         <div className="shareCodeBox">
           <div className="codeHolder">code</div>
-          <button className="codeDbBtn"><GoDownload />Download</button>
+          <button className="codeDbBtn animate__animated animate__fadeIn animate__infinite animate__slow"><GoDownload />Download</button>
           <button className="codeDbBtn"><PiPrinterThin />Print</button>
         </div>
       </div>
@@ -71,3 +71,4 @@ const Share = () => {
 };
 
 export default Share;
+

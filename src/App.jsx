@@ -8,7 +8,7 @@ import ResetPassword from "./auth/Resetpassword/ResetPassword";
 import CreateNewPassword from "./auth/CreateNewPassword/CreateNewPassword";
 import DashBoard from "./pages/Dashboard/Dashboard";
 import Campaign from "./pages/Campaign/Campaign";
-import Track from "./pages/Track/Track";
+import Donor from "./pages/Donor/Donor";
 import Payout from "./pages/Payout/Payout";
 import Account from "./pages/Account/Account";
 import CreateCampaign from "./pages/CreateCampaign/CreateCampaign";
@@ -32,11 +32,11 @@ const App = () => {
         <Route path="/fundraising-page" element={<FundraisingPage />} />
 
         {/* Dashboard and related routes */}
-        <Route path="/" element={<DashboardLayout />}>
+        <Route element={<DashboardLayout />}>
           <Route path="dashboard" element={<DashBoard />} />
           <Route path="campaign" element={<Campaign />} />
           <Route path="campaign/create.campaign" element={<CreateCampaign />} />
-          <Route path="track" element={<Track />} />
+          <Route path="donor" element={<Donor />} />
           <Route path="payout" element={<Payout />} />
           <Route path="account" element={<Account />} />
         </Route>

@@ -1,7 +1,7 @@
 .sideBarBody {
   height: 100%;
   width: 100%;
-  background-color: #0B1215;
+  background-color: white;
   padding: 5px;
   color: white;
 }
@@ -25,7 +25,7 @@
 
 .HeaderActive {
   border-radius: 4px;
-  color: black;
+  color: white;
   font-weight: bold;
   text-decoration: none;
   height: 40px;
@@ -36,7 +36,8 @@
   /* justify-content: center; */
   align-items: center;
   background-color: rgb(7, 212, 7);
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .end {
@@ -53,7 +54,7 @@
   align-items: center;
   border-radius: 10px;
   text-decoration: none;
-  color: white;
+  color: black;
 
   &:hover {
     background-color: rgba(211, 211, 211, 0.171);
@@ -62,7 +63,7 @@
 
 .sideBarWrapper {
   /* width: ; */
-  padding-left: 30px;
+  /* padding-left: 30px; */
   margin-top: 15px;
   height: 90%;
   display: flex;
@@ -71,9 +72,12 @@
 }
 
 .logo {
-  height: 40px;
+  /* height: 40px; */
+  /* max-width: 200px; */
+  /* width: 100%; */
+  width: 150px;
+  height: 50px;
   max-width: 200px;
-  width: 100%;
   padding-right: 5px;
   display: flex;
   align-items: center;
@@ -85,6 +89,8 @@
   img {
     height: 100%;
     width: 100%;
+    padding-left: 30%;
+    /* margin-bottom: 10%; */
   }
   
 }

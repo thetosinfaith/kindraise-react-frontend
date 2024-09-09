@@ -126,7 +126,7 @@
 
 .signup-button {
   padding: 12px 30px;
-  border-radius: 20px;
+  border-radius: 8px;
   color: white;
   background-color: #05BB6D;
   transition: background-color 0.3s ease;

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Period from '../../assets/period.png';
-import WaterSupply from '../../assets/water-supply.png'
+import WaterSupply from '../../assets/water-supply.png';
 import BackToSchool from '../../assets/back-to-school.png';
 import './PopularCampaigns.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const campaigns = [
     {
@@ -38,17 +40,25 @@ const campaigns = [
 const PopularCampaigns = () => {
     const navigate = useNavigate(); 
 
+    useEffect(() => {
+        AOS.init({
+          duration: 3000,
+          once: false,    
+          mirror: true,
+        });
+    }, []);
+
     return (
         <div className='PopularCampaigns-section'>
             <div className='PopularCampaigns-container'>
-                <div className='PopularCampaigns-content'>
+                <div className='PopularCampaigns-content' data-aos="fade-up">
                     <h1>Popular Campaigns</h1>
                     <p>Driven by what matters to you</p>
                 </div>
             </div>
             <div className='campaigns-container'>
                 {campaigns.map((campaign) => (
-                    <div className='campaign-img-content' key={campaign.id}>
+                    <div className='campaign-img-content' key={campaign.id} data-aos="fade-up">
                         <img src={campaign.image} alt={campaign.title} />        
                         <div className='text-content'>
                             <p className='text-one'>{campaign.title}</p>
@@ -63,7 +73,7 @@ const PopularCampaigns = () => {
                     </div>
                 ))}
             </div>
-            <div className="button-container">
+            <div className="button-container" data-aos="zoom-in">
                 <button onClick={() => navigate('/signup')} className="campaign-button">Explore campaigns</button>
             </div>
         </div>
